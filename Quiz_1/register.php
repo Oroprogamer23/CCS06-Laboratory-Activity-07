@@ -3,7 +3,8 @@
 require "vendor/autoload.php";
 
 session_start();
-
+// 2. Why do you think the session variable assignments are wrapped inside an if-else and try-catch statements?
+// The if-else statement is used to determine if the session has already begun. This is crucial since assigning variables before a session begins might result in mistakes.
 
 try {
     if (isset($_POST['fullname'])) {
