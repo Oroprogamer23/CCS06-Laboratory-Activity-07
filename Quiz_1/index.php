@@ -2,6 +2,11 @@
 
 require "vendor/autoload.php";
 
+// 1. What does this function session_start() do to the application?
+// A session is a mechanism to save data that can be accessed from many pages of a website, and the session_start() function in PHP is used to start or resume a session. 
+
+
+
 session_start();
 session_destroy();
 ?>
